@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": {      "model": "tutorialmod:block/deepslate_zircon_ore"     }
+    "": {
+      "model": "tutorialmod:block/deepslate_zircon_ore"
+    }
   }
 }

@@ -30,7 +30,8 @@ public class ModBlocks {
                             .strength(6f)
                             .requiresCorrectToolForDrops()
             ),
-            ModCreativeModeTab.TUTORIAL_TAB);    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
+            ModCreativeModeTab.TUTORIAL_TAB);
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
             () -> new JumpyBlock(
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(6f)

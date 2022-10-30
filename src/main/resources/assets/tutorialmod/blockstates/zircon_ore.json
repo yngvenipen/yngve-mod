@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": {      "model": "tutorialmod:block/zircon_ore"     }
+    "": {
+      "model": "tutorialmod:block/zircon_ore"
+    }
   }
 }

@@ -22,7 +22,7 @@ public class JumpyBlock extends Block {
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
 
-player.sendSystemMessage(Component.literal("Granted Jump Boost :)"));
+        player.sendSystemMessage(Component.literal("Granted Jump Boost :)"));
         return super.use(state, level, pos, player, hand, result);
     }
 

@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": {      "model": "tutorialmod:block/jumpy_block"     }
+    "": {
+      "model": "tutorialmod:block/jumpy_block"
+    }
   }
 }
