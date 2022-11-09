@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import no.nipen.yngve.tutorialmod.TutorialMod;
 import no.nipen.yngve.tutorialmod.block.custom.JumpyBlock;
+import no.nipen.yngve.tutorialmod.block.custom.ZirconLampBlock;
 import no.nipen.yngve.tutorialmod.item.ModCreativeModeTab;
 import no.nipen.yngve.tutorialmod.item.ModItems;
 
@@ -36,6 +37,14 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(6f)
                             .requiresCorrectToolForDrops()
+            ),
+            ModCreativeModeTab.TUTORIAL_TAB);
+    public static final RegistryObject<Block> ZIRCON_LAMP = registerBlock("zircon_lamp",
+            () -> new ZirconLampBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(6f)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(ZirconLampBlock.LIT) ? 15 : 0)
             ),
             ModCreativeModeTab.TUTORIAL_TAB);
     public static final RegistryObject<Block> ZIRCON_ORE = registerBlock("zircon_ore",
