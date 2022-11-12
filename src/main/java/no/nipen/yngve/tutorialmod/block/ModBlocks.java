@@ -5,6 +5,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -13,6 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import no.nipen.yngve.tutorialmod.TutorialMod;
+import no.nipen.yngve.tutorialmod.block.custom.BlueberryCropBlock;
 import no.nipen.yngve.tutorialmod.block.custom.JumpyBlock;
 import no.nipen.yngve.tutorialmod.block.custom.ZirconLampBlock;
 import no.nipen.yngve.tutorialmod.item.ModCreativeModeTab;
@@ -39,6 +41,10 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops()
             ),
             ModCreativeModeTab.TUTORIAL_TAB);
+    public static final RegistryObject<Block> BLUEBERRY_CROP = BLOCKS.register("blueberry_crop",
+            () -> new BlueberryCropBlock(
+                    BlockBehaviour.Properties.copy(Blocks.WHEAT)
+            ));
     public static final RegistryObject<Block> ZIRCON_LAMP = registerBlock("zircon_lamp",
             () -> new ZirconLampBlock(
                     BlockBehaviour.Properties.of(Material.STONE)
