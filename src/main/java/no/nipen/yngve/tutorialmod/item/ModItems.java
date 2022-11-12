@@ -9,12 +9,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import no.nipen.yngve.tutorialmod.TutorialMod;
 import no.nipen.yngve.tutorialmod.item.custom.EightBallItem;
+import no.nipen.yngve.tutorialmod.item.custom.ScytheItem;
 
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
     public static final RegistryObject<Item> SCYTHE = ITEMS.register("scythe",
-            () -> new SwordItem(Tiers.NETHERITE, 10, 1.6f,
+            () -> new ScytheItem(Tiers.NETHERITE, 10, 1.6f,
                     new Item.Properties()
                             .stacksTo(1)
                             .tab(ModCreativeModeTab.TUTORIAL_TAB)
