@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import no.nipen.yngve.tutorialmod.block.ModBlocks;
 import no.nipen.yngve.tutorialmod.item.ModItems;
+import no.nipen.yngve.tutorialmod.painting.ModPaintings;
 import no.nipen.yngve.tutorialmod.villager.ModVillagers;
 import org.slf4j.Logger;
 
@@ -31,7 +32,7 @@ public class TutorialMod {
         ModBlocks.register(modEventBus);
 
         ModVillagers.register(modEventBus);
-
+        ModPaintings.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
