@@ -67,6 +67,20 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops(), UniformInt.of(6, 9)
             ),
             ModCreativeModeTab.TUTORIAL_TAB);
+    public static final RegistryObject<Block> NETHERRACK_ZIRCON_ORE = registerBlock("netherrack_zircon_ore",
+            () -> new DropExperienceBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(6f)
+                            .requiresCorrectToolForDrops(), UniformInt.of(7, 10)
+            ),
+            ModCreativeModeTab.TUTORIAL_TAB);
+    public static final RegistryObject<Block> ENDSTONE_ZIRCON_ORE = registerBlock("endstone_zircon_ore",
+            () -> new DropExperienceBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(6f)
+                            .requiresCorrectToolForDrops(), UniformInt.of(7, 10)
+            ),
+            ModCreativeModeTab.TUTORIAL_TAB);
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
